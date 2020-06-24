@@ -8,20 +8,13 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(sentence) {
   const results = {};
-  let mergedSentence = "";
-  for (let i = 0; i < sentence.length; i++) {
-    if (sentence[i] === " ") {
-      mergedSentence += sentence[i + 1];
-      i++;
-    } else {
-      mergedSentence += sentence[i];
-    }
-  } console.log(mergedSentence);
-  for (let letter of mergedSentence) {
-    if (results[letter]) {
-      results[letter] += 1;
-    } else {
-      results[letter] = 1;
+  for (let letter of sentence) {
+    if (letter !== " ") {
+      if (results[letter]) {
+        results[letter] += 1;
+      } else {
+        results[letter] = 1;
+      }
     }
   }
   return results;
