@@ -8,7 +8,16 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(sentence) {
   const results = {};
-  for (let letter of sentence) {
+  let mergedSentence = "";
+  for (let i = 0; i < sentence.length; i++) {
+    if (sentence[i] === " ") {
+      mergedSentence += sentence[i + 1];
+      i++;
+    } else {
+      mergedSentence += sentence[i];
+    }
+  } console.log(mergedSentence);
+  for (let letter of mergedSentence) {
     if (results[letter]) {
       results[letter] += 1;
     } else {
@@ -16,9 +25,9 @@ const countLetters = function(sentence) {
     }
   }
   return results;
-}
+};
 
-let sentence1 = countLetters("This is starting to make more sense.");
+let sentence1 = countLetters("this is starting to make more sense");
 console.log(sentence1);
 
 
@@ -26,4 +35,3 @@ assertEqual(sentence1["a"], 2);
 assertEqual(sentence1["i"], 3);
 assertEqual(sentence1["s"], 2);
 assertEqual(sentence1["t"], 4);
-assertEqual(sentence1["T"], 1);
