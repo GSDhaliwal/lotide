@@ -1,3 +1,15 @@
+const middle = function(array) {
+  if (array.length <= 2) {
+    return [];
+  } else if (array.length % 2 !== 0) {
+    let middleIndex = Math.floor(array.length / 2);
+    return [array[middleIndex]];
+  } else if (array.length % 2 === 0) {
+    let middleIndex = array.length / 2;
+    return [array[middleIndex - 1], array[middleIndex]];
+  }
+};
+
 const eqArrays = function(array1, array2) {
   if (array1.length === array2.length) {
     for (let i = 0; i < array1.length; i++) {
@@ -13,23 +25,13 @@ const eqArrays = function(array1, array2) {
 
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected) === true) {
-    console.log(`✅✅ Assertion Passed: arrays match`);
+    console.log("✅✅ Assertion Passed: [" + actual + "] === [" + expected + "]");
   } else if (eqArrays(actual, expected) === false) {
-    console.log(`❌❌ Assertion Failed: arrays do not match`);
+    console.log("❌❌ Assertion Failed: [" + actual + "] !== [" + expected + "]");
   }
 };
 
-const middle = function(array) {
-  if (array.length <= 2) {
-    return [];
-  } else if (array.length % 2 !== 0) {
-    let middleIndex = Math.floor(array.length / 2);
-    return [array[middleIndex]];
-  } else if (array.length % 2 === 0) {
-    let middleIndex = array.length / 2;
-    return [array[middleIndex - 1], array[middleIndex]];
-  }
-};
+
 
 assertArraysEqual([], middle([])); //PASS
 assertArraysEqual([], middle([1, 2])); //PASS

@@ -25,11 +25,11 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-const assertArraysEqual = function(input1, input2) {
-  if (eqArrays(input1, input2) === true) {
-    console.log(`✅✅ Assertion Passed: arrays match`);
-  } else if (eqArrays(input1, input2) === false) {
-    console.log(`❌❌ Assertion Failed: arrays do not match`);
+const assertArraysEqual = function(actual, expected) {
+  if (eqArrays(actual, expected) === true) {
+    console.log("✅✅ Assertion Passed: [" + actual + "] === [" + expected + "]");
+  } else if (eqArrays(actual, expected) === false) {
+    console.log("❌❌ Assertion Failed: [" + actual + "] !== [" + expected + "]");
   }
 };
 
