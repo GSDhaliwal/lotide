@@ -43,3 +43,5 @@ assertArraysEqual(["1", "2"],(without(["1", "2", "3"], [1, 2, "3"]))); // PASS
 assertArraysEqual(["1", "2", "3"], (without(["1", "2", "3"], [1, 2, "3"]))); // FAIL
 assertArraysEqual(["hey", "hello", "how are you"], (without(["hey", "hello", "how are you"], [1, 2, 3 , 4, "hello"]))); //FAIL
 assertArraysEqual(["hey", "hello", "how are you"], (without(["hey", "hello", "how are you"], [1, 2, 3 , 4])));//PASS
+
+module.exports = without;

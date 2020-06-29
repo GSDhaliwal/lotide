@@ -20,13 +20,11 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-
-
 let sentence1 = countLetters("this is starting to make more sense");
-console.log(sentence1);
-
 
 assertEqual(sentence1["a"], 2);
 assertEqual(sentence1["i"], 3);
 assertEqual(sentence1["s"], 2);
 assertEqual(sentence1["t"], 4);
+
+module.exports = countLetters;

@@ -31,8 +31,6 @@ const words = ["ground", "control", "to", "major", "tom"];
 const words2 = ["human", "food", "is", "not", "for", "animals"];
 const words3 = ["I", "am", "running", "out", "of", "things", "to", "say"];
 
-
-
 const results1 = map(words, word => word[0]);
 const results2 = map(words2, word => word[0]);
 const results3 = map(words3, word => word[0]);
@@ -43,9 +41,4 @@ assertArraysEqual(results2, ["h", "f", "i", "n", "f", "a"]);// FAIL
 assertArraysEqual(results3, ["I", "a", "r", "o", "o", "t", "t", "s"]);
 assertArraysEqual(results4, ["g", "c", "t", "m", "t"]);
 
-
-
-console.log(results1);
-console.log(results2);
-console.log(results3);
-console.log(results4);
+module.exports = map;

@@ -3,7 +3,7 @@ const takeUntil = function(array, callback) {
   for (let item of array) {
     if (callback(item)) {
       break;
-    } else { 
+    } else {
       results.push(item);
     }
   }
@@ -43,5 +43,4 @@ assertArraysEqual(results2, ["I've", "been", "to", "Hollywood"]);// PASS
 assertArraysEqual(results1, [1, 2, 5, 7, 2, -1, 2]); // => should FAIL
 assertArraysEqual(results2, ["I've", "been", "to", "Hollywood", ","]);// FAIL
 
-console.log(results1);
-console.log(results2);
+module.exports = takeUntil;
