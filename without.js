@@ -16,6 +16,8 @@ const without = function(source, itemsToRemove) {
   return itemsNotRemoved;
 };
 
+//TEST
+/*
 const eqArrays = function(array1, array2) {
   if (array1.length === array2.length) {
     for (let i = 0; i < array1.length; i++) {
@@ -43,5 +45,5 @@ assertArraysEqual(["1", "2"],(without(["1", "2", "3"], [1, 2, "3"]))); // PASS
 assertArraysEqual(["1", "2", "3"], (without(["1", "2", "3"], [1, 2, "3"]))); // FAIL
 assertArraysEqual(["hey", "hello", "how are you"], (without(["hey", "hello", "how are you"], [1, 2, 3 , 4, "hello"]))); //FAIL
 assertArraysEqual(["hey", "hello", "how are you"], (without(["hey", "hello", "how are you"], [1, 2, 3 , 4])));//PASS
-
+*/
 module.exports = without;

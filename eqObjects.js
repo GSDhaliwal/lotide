@@ -15,7 +15,8 @@ const eqObjects = function(object1, object2) {
   }
   return true;
 };
-
+//TEST
+/*
 const eqArrays = function(actual, expected) {
   if (actual.length === expected.length) {
     for (let i = 0; i < actual.length; i++) {
@@ -49,5 +50,5 @@ assertEqual(eqObjects(ab, ba), true);
 assertEqual(eqObjects(ab, abc), false);
 assertEqual(eqObjects(cd, dc), true);
 assertEqual(eqObjects(cd, cd2), true);
-
+*/
 module.exports = eqObjects;

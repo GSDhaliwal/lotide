@@ -10,6 +10,9 @@ const takeUntil = function(array, callback) {
   return results;
 };
 
+
+//TEST
+/*
 const eqArrays = function(actual, expected) {
   if (actual.length === expected.length) {
     for (let i = 0; i < actual.length; i++) {
@@ -42,5 +45,5 @@ assertArraysEqual(results1, [1, 2, 5, 7, 2]); // => should PASS
 assertArraysEqual(results2, ["I've", "been", "to", "Hollywood"]);// PASS
 assertArraysEqual(results1, [1, 2, 5, 7, 2, -1, 2]); // => should FAIL
 assertArraysEqual(results2, ["I've", "been", "to", "Hollywood", ","]);// FAIL
-
+*/
 module.exports = takeUntil;

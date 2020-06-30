@@ -12,6 +12,8 @@ const flatten = function(array) {
   return finalArray;
 };
 
+//TEST
+/*
 const eqArrays = function(array1, array2) {
   if (array1.length === array2.length) {
     for (let i = 0; i < array1.length; i++) {
@@ -39,5 +41,5 @@ assertArraysEqual(["1", "2"], flatten([["1"], "2", "3"])); // FAIL
 assertArraysEqual(["1", "2", "3"], flatten([["1"], "2", "3"])); // PASS
 assertArraysEqual(["hey", "hello", "how are you"], flatten(["hey", ["hello"], ["how are you"]])); //pass
 assertArraysEqual(["hey", "hello"], flatten([["hey", "hello"]]));//pass
-
+*/
 module.exports = flatten;

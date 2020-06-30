@@ -6,6 +6,8 @@ const findKey = function(object, callback) {
   }
 };
 
+//TEST
+/*
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -36,5 +38,5 @@ const results2 = findKey({
 assertEqual(results1, "noma"); // => should PASS
 assertEqual(results2, "Blue Hill");// PASS
 assertEqual(results1, "Ora");
-
+*/
 module.exports = findKey;

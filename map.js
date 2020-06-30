@@ -6,6 +6,9 @@ const map = function(array, callback) {
   return results;
 };
 
+
+//TEST
+/*
 const eqArrays = function(actual, expected) {
   if (actual.length === expected.length) {
     for (let i = 0; i < actual.length; i++) {
@@ -40,5 +43,5 @@ assertArraysEqual(results1, ["g", "c", "t", "m", "t"]); // => should PASS
 assertArraysEqual(results2, ["h", "f", "i", "n", "f", "a"]);// FAIL
 assertArraysEqual(results3, ["I", "a", "r", "o", "o", "t", "t", "s"]);
 assertArraysEqual(results4, ["g", "c", "t", "m", "t"]);
-
+*/
 module.exports = map;

@@ -12,6 +12,8 @@ const countLetters = function(sentence) {
   return results;
 };
 
+//TEST
+/*
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -26,5 +28,5 @@ assertEqual(sentence1["a"], 2);
 assertEqual(sentence1["i"], 3);
 assertEqual(sentence1["s"], 2);
 assertEqual(sentence1["t"], 4);
-
+*/
 module.exports = countLetters;
