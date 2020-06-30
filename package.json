@@ -1,7 +1,7 @@
 {
   "name": "@gsdhaliwal/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple version of Lodash created for fundamental practice.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/GSDhaliwal/lotide.git"
   },
-  "author": "",
+  "author": "Gurcharan S. Dhaliwal <Gurcharan.Dhaliwal86@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GSDhaliwal/lotide/issues"
